@@ -22,9 +22,9 @@ const getAlumnoById = async (req, res) => {
     const { legajo } = req.params
 
     const legajoId = alumnos.find(
-      (a) => a.legajo /* .toString() */ === Number(legajo)
+      (a) => a.legajo.toString() === Number(legajo).toString()
     )
-
+ 
     if (!legajoId) {
       return res
         .status(404)
@@ -34,10 +34,12 @@ const getAlumnoById = async (req, res) => {
     return res.status(200).json(legajoId)
   } catch (error) {
     console.log(error)
-    return res.status(500).JSON({
+    return res.status(500).json({
       error: 'No se pudo obtener el datalle del alumno con legajo n° {legajo}'
     })
   }
 }
 
-module.exports = { getAlumnoAll, getAlumnoById }
+
+
+module.exports = { getAlumnoAll, getAlumnoById,}
