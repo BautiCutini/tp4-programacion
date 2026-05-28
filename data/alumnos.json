@@ -253,11 +253,20 @@
   },
   {
     "legajo": 10029,
-    "nombre": "ricardo",
-    "apellido": "bertanene",
-    "email": "bautisdsdsdta@gmail.com",
+    "nombre": "Bautista",
+    "apellido": "cape",
+    "email": "lautalautaville@ville.lau",
     "fechaAlta": "2026-05-26",
     "modificacion": "2026-05-26",
+    "isActive": true
+  },
+  {
+    "legajo": 10030,
+    "nombre": "Bautista",
+    "apellido": "Bartolini",
+    "email": "bautistab@gmail.com",
+    "fechaAlta": "2026-05-28",
+    "modificacion": "2026-05-28",
     "isActive": true
   }
 ]
