@@ -60,7 +60,7 @@ const postNewAlumno = async (req, res) => {
 }
 
 const putAlumnoBylegajo = async (req, res) => {
-   console.log("ENTRÓ AL PUT")
+  console.log('ENTRÓ AL PUT')
   const { legajo } = req.params
   try {
     const { nombre, apellido, email, isActive } = req.body
@@ -101,4 +101,27 @@ const putAlumnoBylegajo = async (req, res) => {
   }
 }
 
-module.exports = { getAlumnoAll, getAlumnoById, postNewAlumno, putAlumnoBylegajo }
+const deleteAlumnoById = async (req, res) => {
+  try {
+    const { id } = req.params
+
+    const data = await fs.readFile('./data/alumnos.json', 'utf8')
+    const alumnos = JSON.parse(data)
+
+    const index = alumnos.findIndex((alumno) => alumno.legajo === Number(id))
+
+    if (index === -1) {
+      return res.status(404).json({ error: `No se encontro el alumno con el legajo ${id}` })
+    }
+
+    alumnos.splice(index, 1)
+
+    await fs.writeFile('./data/alumnos.json', JSON.stringify(alumnos, null, 2), 'utf8')
+    return res.status(200).json({ msg: `Se elimino correctamente el alumno con el legajo ${id}` })
+  } catch (error) {
+    console.log(error)
+    return res.status(500).json({ error: 'No se pudo eliminar el alumno' })
+  }
+}
+
+module.exports = { getAlumnoAll, getAlumnoById, postNewAlumno, putAlumnoBylegajo, deleteAlumnoById }
