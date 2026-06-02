@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "Commonjs",
+    "module": "commonjs",
     "moduleResolution": "Node",
     "ignoreDeprecations": "6.0",
-    "esModuleInterop": true ,
-    "forceConsistentCasingInFileNames": true ,
-    "strict":true ,
-    "skipDefaultLibCheck": true
-
-  }
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipDefaultLibCheck": true,
+    "rootDir": "./models",
+    "outDir": "./dist/models"
+  },
+  "include": ["models/**/*.ts"]
 }
