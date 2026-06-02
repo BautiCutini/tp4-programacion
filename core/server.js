@@ -12,6 +12,7 @@ class Server {
 
   middleware () {
     this.app.use(cors())
+    this.app.use(express.json())
   }
 
   rutas () {
@@ -24,7 +25,7 @@ class Server {
 
     // manejo de errores
     this.app.use((req, res, next) => {
-      return res.status(400).json({ msg: 'Error.' })
+      return res.status(404).json({ msg: 'Error.' })
     })
     this.app.use((err, req, res, next) => {
       console.error(err.stack)

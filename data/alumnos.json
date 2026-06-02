@@ -223,5 +223,41 @@
     "fechaAlta": "2026-05-14",
     "modificacion": "2026-05-14",
     "isActive": true
+  },
+  {
+    "legajo": 10026,
+    "nombre": "Victoria",
+    "apellido": "Ruiz",
+    "email": "dios@gmail.com",
+    "fechaAlta": "2026-05-26",
+    "modificacion": "2026-05-26",
+    "isActive": true
+  },
+  {
+    "legajo": 10027,
+    "nombre": "Victoria",
+    "apellido": "Ruiz",
+    "email": "dios@gmail.com",
+    "fechaAlta": "2026-05-26",
+    "modificacion": "2026-05-26",
+    "isActive": true
+  },
+  {
+    "legajo": 10028,
+    "nombre": "Bautists",
+    "apellido": "Cutini",
+    "email": "bautista@gmail.com",
+    "fechaAlta": "2026-05-26",
+    "modificacion": "2026-05-26",
+    "isActive": true
+  },
+  {
+    "legajo": 10029,
+    "nombre": "Bautista",
+    "apellido": "cape",
+    "email": "lautalautaville@ville.lau",
+    "fechaAlta": "2026-05-26",
+    "modificacion": "2026-05-26",
+    "isActive": true
   }
 ]
