@@ -81,11 +81,11 @@ git push origin feature/nombre-del-cambio
 
 Division propuesta segun las areas del proyecto:
 
-- Lautaro: configuracion general del servidor, `app.js`, `core/server.js`, dependencias y estructura base del proyecto.
-- Bautista Cutini: rutas, controlador principal de alumnos y pruebas de endpoints en Postman.
-- Maria Victoria Ruiz: modelos, archivos JSON de datos, validaciones y documentacion.
-
-> Esta division puede ajustarse si el equipo necesita reflejar exactamente quien trabajo cada archivo.
+- Lautaro Capdeville: trabajo sobre la funcionalidad `DELETE`, ubicada principalmente en `controllers/alumno.controller.js` con la funcion `deleteAlumnoById`, y en `routes/alumno.routes.js` con la ruta `DELETE /alumnos/:id`.
+- Bautista Cutini: trabajo sobre la funcionalidad `POST`, ubicada principalmente en `controllers/alumno.controller.js` con la funcion `postNewAlumno`, en `routes/alumno.routes.js` con la ruta `POST /alumnos`, y en el uso del middleware de validacion.
+- Bautista Bartolini: trabajo sobre la funcionalidad `PUT`, ubicada principalmente en `controllers/alumno.controller.js` con la funcion `putAlumnoBylegajo`, y en `routes/alumno.routes.js` con la ruta `PUT /alumnos/:legajo`.
+- Santino Crivera: se encargo de dockerizar el proyecto, preparando la configuracion necesaria para ejecutar la API dentro de un contenedor.
+- Francesco Dicarli: se encargo del despliegue/renderizado del proyecto en Render.
 
 ## Distribucion de archivos y carpetas
 
